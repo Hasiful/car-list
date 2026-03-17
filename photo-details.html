@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> AI Presentation And Documentation </title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- wow -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+  <!--==================== Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="img">
+            </a>
+
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+
+            <div class="offcanvas border-0 offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="img">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-menu align-items-xl-center justify-content-center w-100">
+                        <li class="nav-item d-xl-none">
+                            <div class="dropdown lang-box">
+                                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                                        </path>
+                                    </svg>
+                                    <span class="text">English</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="lang-box-item" data-code="en">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/us.png" alt="usa">
+                                            </div>
+                                            <span class="text">Enlish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item selected" data-code="hn">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/bd.png" alt="bd">
+                                            </div>
+                                            <span class="text">Bangla</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sp.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Spanish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sa.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Arabic</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/pak.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Urdu</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/fr.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">French</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="photographer.html">Photographer</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item d-xl-none d-block">
+                            <a href="login.html" class="btn w-100 btn--md btn--base">
+                                <span class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </span>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-right d-none d-xl-flex">
+                <div class="dropdown lang-box">
+                    <button class="lang-box-btn" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                            </path>
+                        </svg>
+                        <span class="text">English</span>
+                        <span class="icon">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="lang-box-item" data-code="en">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/us.png" alt="usa">
+                                </div>
+                                <span class="text">Enlish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item selected" data-code="hn">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/bd.png" alt="bd">
+                                </div>
+                                <span class="text">Bangla</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sp.png" alt="Spanish">
+                                </div>
+                                <span class="text">Spanish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sa.png" alt="Spanish">
+                                </div>
+                                <span class="text">Arabic</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/pak.png" alt="Spanish">
+                                </div>
+                                <span class="text">Urdu</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/fr.png" alt="Spanish">
+                                </div>
+                                <span class="text">French</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn--dark">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+<!-- ==================== Breadcrumb Start Here ==================== -->
+<div class="breadcrumb">
+    <div class="breadcrumb__bg">
+        <video class="fit-image" muted loop autoplay src="assets/images/thumbs/shape.mp4"></video>
+    </div>
+    <div class="container">
+        <h2 class="breadcrumb__title">Photo Details</h2>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a> </li>
+            <li class="breadcrumb__item">/</li>
+            <li class="breadcrumb__item"> <span class="breadcrumb__item-text">Photo Details</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+<main>
+    <section class="my-120">
+        <div class="container">
+            <div class="photo-details">
+                <div class="photo-details-body">
+                    <div class="photo-details-body-wrapper">
+                        <div class="photo-details-left">
+                            <div class="photo-details-header">
+                                <a href="" class="photo-details-author">
+                                    <span class="thumb">
+                                        <img src="assets/images/team/1.png" alt="img">
+                                    </span>
+                                    <div class="content">
+                                        <span class="name">Matteo Milan</span>
+                                        <span class="count">10 Photos</span>
+                                    </div>
+                                </a>
+                                <a href="" class="btn btn--base">Hire Me</a>
+                            </div>
+                            <div class="photo-details-thumb">
+                                <img src="assets/images/photos/13.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="photo-details-content">
+                            <form action="#" class="photo-details-form">
+                                <label class="form--label">Give Review</label>
+                                <div class="rating-group">
+                                    <input disabled checked class="rating__input" name="rating3" id="rating3-none"
+                                        value="0" type="radio">
+                                    <label class="rating__label" for="rating3-1"><i
+                                            class="rating__icon rating__icon--star la la-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                    <label class="rating__label" for="rating3-2"><i
+                                            class="rating__icon rating__icon--star la la-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                    <label class="rating__label" for="rating3-3"><i
+                                            class="rating__icon rating__icon--star la la-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                                    <label class="rating__label" for="rating3-4"><i
+                                            class="rating__icon rating__icon--star la la-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                    <label class="rating__label" for="rating3-5"><i
+                                            class="rating__icon rating__icon--star la la-star"></i></label>
+                                    <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                                </div>
+                                <button class="btn btn--sm btn--base w-100 mt-2">Submit</button>
+                            </form>
+
+                            <div class="photo-details-list">
+                                <div class="photo-details-list-item">
+                                    <span class="label">Views</span>
+                                    <span class="value">2,840</span>
+                                </div>
+                                <div class="photo-details-list-item">
+                                    <span class="label">Rating</span>
+                                    <span class="value">1200 (4.5)</span>
+                                </div>
+                                <div class="photo-details-list-item">
+                                    <span class="label">Share</span>
+                                    <span class="value">19</span>
+                                </div>
+
+                                <div class="photo-details-list-item">
+                                    <span class="label">Media Type</span>
+                                    <span class="value">JPG</span>
+                                </div>
+
+                                <div class="photo-details-list-item">
+                                    <span class="label">Resolution</span>
+                                    <span class="value">2730 x 4096</span>
+                                </div>
+
+                                <div class="photo-details-list-item">
+                                    <span class="label">Published Date</span>
+                                    <span class="value">16 February 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="photo-details-share">
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                        <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                            <i class="fab fa-facebook"></i> </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                            <i class="fab fa-instagram"></i> </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.x.com/" class="social-list__link" target="_blank">
+                                            <i class="fa-brands fa-x-twitter"></i> </a>
+                                    </li>
+                                    <li class="social-list__item">
+                                        <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-details-tag">
+                        <h2 class="photo-details-tag-title h6">More like this</h2>
+
+                        <div class="photo-details-tag-wrapper">
+                            <a href="" class="tag-item">Nature</a>
+
+                            <a href="" class="tag-item">Street</a>
+
+                            <a href="" class="tag-item">Wildlife</a>
+
+                            <a href="" class="tag-item">Travel</a>
+
+                            <a href="" class="tag-item">Food Photography</a>
+
+                            <a href="" class="tag-item">Fashion</a>
+
+                        </div>
+                    </div>
+                    <div class="photo-wrapper">
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/8.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/7.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/6.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/5.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/4.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/3.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/2.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="photo-item wow fadeInUp" data-wow-delay="0.2s" data-bs-toggle="modal"
+                            data-bs-target="#previewModal">
+                            <div class="photo-item-wrapper">
+                                <a href="photo-details.html" class="photo-item-thumb">
+                                    <img src="assets/images/photos/1.png" alt="img">
+                                </a>
+                                <div class="photo-item-content">
+                                    <a href="" class="photo-item-author">
+                                        <span class="thumb">
+                                            <img src="assets/images/clients/2.png" alt="img">
+                                        </span>
+                                        <span class="name">Matteo Milan</span>
+                                    </a>
+                                    <div class="photo-item-rating">
+                                        <span class="average">4.9</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="count">(20)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="row gy-4 gy-sm-5 justify-content-between">
+            <div class="col-lg-4 pe-lg-5">
+                <div class="footer-item">
+                    <a class="footer-item__logo" href="">
+                        <img src="assets/images/logo/logo.png" alt="img">
+                    </a>
+
+                    <p class="footer-item__desc">
+                        ThumbLab is an AI-powered thumbnail and visual content creator. Generate stunning YouTube
+                        thumbnails, gig images, Reels covers, or branding kits in seconds.
+                    </p>
+
+                    <ul class="social-list mt-4">
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-facebook"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-instagram"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.x.com/" class="social-list__link" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-linkedin-in"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-6">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Useful Links</h2>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Home</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="/blog">Blog</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-6">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Policy Links</h2>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Privacy Policy</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Terms of Service</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Contact Info</h2>
+                    <ul class="footer-contact">
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <p>28 Benin, south of Niger #5 San Francisco</p>
+                            </div>
+                        </li>
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <a href="mailto:support@thumblab.com" class="link"> support@thumblab.com </a>
+                            </div>
+                        </li>
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="content">
+                                <a href="tel:+523-00000000" class="link"> +523-00000000 </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="footer-text">Photorate</h1>
+    </div>
+</footer>
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> AI Presentation And Documentation </title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- wow -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+  <!--==================== Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="img">
+            </a>
+
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+
+            <div class="offcanvas border-0 offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="img">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-menu align-items-xl-center justify-content-center w-100">
+                        <li class="nav-item d-xl-none">
+                            <div class="dropdown lang-box">
+                                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                                        </path>
+                                    </svg>
+                                    <span class="text">English</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="lang-box-item" data-code="en">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/us.png" alt="usa">
+                                            </div>
+                                            <span class="text">Enlish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item selected" data-code="hn">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/bd.png" alt="bd">
+                                            </div>
+                                            <span class="text">Bangla</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sp.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Spanish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sa.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Arabic</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/pak.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Urdu</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/fr.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">French</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="photographer.html">Photographer</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item d-xl-none d-block">
+                            <a href="login.html" class="btn w-100 btn--md btn--base">
+                                <span class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </span>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-right d-none d-xl-flex">
+                <div class="dropdown lang-box">
+                    <button class="lang-box-btn" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                            </path>
+                        </svg>
+                        <span class="text">English</span>
+                        <span class="icon">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="lang-box-item" data-code="en">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/us.png" alt="usa">
+                                </div>
+                                <span class="text">Enlish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item selected" data-code="hn">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/bd.png" alt="bd">
+                                </div>
+                                <span class="text">Bangla</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sp.png" alt="Spanish">
+                                </div>
+                                <span class="text">Spanish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sa.png" alt="Spanish">
+                                </div>
+                                <span class="text">Arabic</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/pak.png" alt="Spanish">
+                                </div>
+                                <span class="text">Urdu</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/fr.png" alt="Spanish">
+                                </div>
+                                <span class="text">French</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn--dark">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+<main>
+    <!--========================== Banner Section Start ==========================-->
+<section class="banner-section">
+    <div class="banner-section-shape">
+        <img class="fit-image" src="assets/images/thumbs/shape.webp" alt="shape">
+    </div>
+
+    <div class="container">
+        <div class="row gy-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="banner-content wow fadeInDown" data-wow-delay="0.2s">
+                    <p class="banner-content__subtitle">
+                        Find Your Perfect Car
+                    </p>
+                    <h1 class="banner-content__title">
+                        Discover, Compare & Buy Your Dream Car
+                    </h1>
+                    <p class="banner-content__desc">
+                        Explore a wide range of new and used cars from verified dealers. Compare prices, features, and
+                        find the best deal for your next ride.
+                    </p>
+                    <p class="banner-content__btn">
+                        <a href="" class="btn btn--white pill">
+                            Browse Cars
+                        </a>
+                        <a href="" class="btn btn--light pill">
+                            Become a Dealer
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="banner-content__thumb">
+                    <img class="fit-image" src="assets/images/thumbs/banner.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-form-section">
+    <div class="container">
+        <div class="banner-form-wrapper">
+            <form action="" class="banner-form">
+                <h5 class="banner-form-title">Find your next car</h5>
+                <div class="banner-form-inner">
+                    <div class="banner-form-group">
+                        <label for="make" class="form--label">Make</label>
+                        <select name="make" id="make" class="form--control select2">
+                            <option value="">Select Make</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="honda">Honda</option>
+                            <option value="ford">Ford</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+
+                    <div class="banner-form-group">
+                        <label for="car-type" class="form--label">Car Type</label>
+                        <select name="car-type" id="car-type" class="form--control select2">
+                            <option value="">Select Car Type</option>
+                            <option value="sedan">Old Car</option>
+                            <option value="suv">New Car</option>
+                            <option value="truck">Recondition</option>
+                        </select>
+                    </div>
+
+                    <div class="banner-form-group">
+                        <label for="location" class="form--label">Location</label>
+                        <select name="location" id="location" class="form--control select2">
+                            <option value="">Select Location</option>
+                            <option value="sedan">London</option>
+                            <option value="suv">New York</option>
+                            <option value="truck">Los Angeles</option>
+                        </select>
+                    </div>
+
+                    <div class="banner-form-group">
+                        <label for="price-range" class="form--label">Price Range</label>
+                        <select name="price-range" id="price-range" class="form--control select2">
+                            <option value="">Select Price Range</option>
+                            <option value="0-5000">$0 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-20000">$10,000 - $20,000</option>
+                            <option value="20000-50000">$20,000 - $50,000</option>
+                            <option value="50000+">$50,000+</option>
+                        </select>
+                    </div>
+                    <div class="banner-form-btn">
+                        <button class="btn btn--base w-100" type="submit">Search Now</button>
+                    </div>
+                </div>
+
+                <div class="banner-form-note">
+                    <span class="icon">
+                        <i class="las la-info-circle"></i>
+                    </span>
+                    Over 10,000 cars available. Find your perfect match today!
+                </div>
+            </form>
+
+            <div class="banner-category">
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/1.png" alt="car">
+                    </span>
+                    <span class="text">New cars</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/2.png" alt="car">
+                    </span>
+                    <span class="text">SUV</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/3.png" alt="car">
+                    </span>
+                    <span class="text">Ute</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/4.png" alt="car">
+                    </span>
+                    <span class="text">Hatch</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/5.png" alt="car">
+                    </span>
+                    <span class="text">Offroad 4x4</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/6.png" alt="car">
+                    </span>
+                    <span class="text">Electric</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/7.png" alt="car">
+                    </span>
+                    <span class="text">Performance</span>
+                </a>
+                <a href="" class="banner-category-item">
+                    <span class="thumb">
+                        <img src="assets/images/category/8.png" alt="car">
+                    </span>
+                    <span class="text">Unique</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--========================== Banner Section End ==========================-->
+    <section class="my-120">
+    <div class="container">
+        <div class="section-heading style-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-heading-content">
+                <h2 class="section-heading-title">
+                    Discover <span class="highlight">Car Listings</span>
+                </h2>
+                <p class="section-heading-desc">
+                    Browse trending cars from trusted dealers and find the best vehicle for your next journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="top-car-slider">
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/9.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/8.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/7.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/6.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/5.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/4.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/3.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="car-item">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/2.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <section class="category-section mb-120">
+    <div class="container">
+        <div class="section-heading style-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-heading-content">
+                <p class="section-heading-name">
+                    Top Category
+                </p>
+                <h2 class="section-heading-text h4">
+                    Browse popular car categories on our <span class="highlight">
+                        car listing platform,
+                    </span> and quickly compare models, features, and prices to find the right ride.
+                </h2>
+            </div>
+        </div>
+
+        <div class="row g-3 g-xxl-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/1.png" alt="nature">
+                    </div>
+                    <p class="category-item-name">New cars</p>
+                    <p class="category-item-count">4.5M cars</p>
+
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/2.png" alt="portrait">
+                    </div>
+                    <p class="category-item-name">SUV</p>
+                    <p class="category-item-count">3.8M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/3.png" alt="street">
+                    </div>
+                    <p class="category-item-name">Ute</p>
+                    <p class="category-item-count">2.9M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/4.png" alt="wildlife">
+                    </div>
+                    <p class="category-item-name">Hatch</p>
+                    <p class="category-item-count">2.4M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/5.png" alt="travel">
+                    </div>
+                    <p class="category-item-name">Offroad 4x4</p>
+                    <p class="category-item-count">3.2M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/6.png" alt="food">
+                    </div>
+                    <p class="category-item-name">Electric</p>
+                    <p class="category-item-count">1.7M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/7.png" alt="fashion">
+                    </div>
+                    <p class="category-item-name">Performance</p>
+                    <p class="category-item-count">2.1M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-xl-3">
+                <a href="" class="category-item">
+                    <div class="category-item-thumb">
+                        <img src="assets/images/category/8.png" alt="abstract">
+                    </div>
+                    <p class="category-item-name">Unique</p>
+                    <p class="category-item-count">1.3M cars</p>
+                    <button class="category-item-arrow">
+                        <span class="category-item-arrow-inner">
+                            <i class="las la-arrow-right"></i>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="why-choose my-120">
+    <div class="container">
+        <div class="section-heading wow fadeInUp style-center" data-wow-delay="0.2s">
+            <div class="section-heading-content">
+                <h2 class="section-heading-title">
+                    Your Trusted <span class="highlight">
+                        Car Marketplace
+                    </span>
+                </h2>
+                <p class="section-heading-desc">
+                    Find the best car deals from reliable dealers and explore a wide range of vehicles all in one place.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="choose-wrapper">
+            <div class="choose-about">
+                <div class="choose-about-thumb">
+                    <img src="assets/images/thumbs/choose.png" alt="">
+                </div>
+                <div class="choose-about-contact">
+                    <div class="choose-about-contact-wrapper">
+                        <div class="choose-about-contact-shape">
+                            <img class="fit-image" src="assets/images/thumbs/shape.webp" alt="shape">
+                        </div>
+                        <h5 class="title">Need roofing support?</h5>
+                        <a href="" class="link">
+                            Contact us
+                            <span class="icon">
+                                <i class="las la-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-content">
+                <div class="choose-content-top">
+                    <div class="choose-item">
+                        <span class="choose-item-icon">
+                            <img src="assets/images/icon/eye.svg" alt="">
+                        </span>
+                        <h6 class="choose-item-title">Our vision</h6>
+                        <p class="choose-item-desc">
+                            Be a trusted roofing partner known for consistent quality and dependable service.
+                        </p>
+                    </div>
+                    <div class="choose-item">
+                        <div class="choose-item-shape">
+                            <img class="fit-image" src="assets/images/thumbs/shape.webp" alt="shape">
+                        </div>
+                        <span class="choose-item-icon">
+                            <img src="assets/images/icon/focus.svg" alt="">
+                        </span>
+                        <h6 class="choose-item-title">Our mission</h6>
+                        <p class="choose-item-desc">
+                            Deliver reliable roofing work through quality materials and skilled workmanship.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="choose-statistics">
+                    <div class="choose-statistics-header">
+                        <h2 class="count">1,200 +</h2>
+                        <p class="title">roofs installed</p>
+                    </div>
+                    <p class="desc">
+                        Residential and commercial projects delivered with consistent quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</main>
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

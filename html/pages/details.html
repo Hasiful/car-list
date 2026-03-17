@@ -1,0 +1,516 @@
+@@include('../layout/_template-top.html')
+@@include('../layout/_header.html')
+@@include('../layout/_breadcrumb.html', {"breadcrumbText": "Photographer Profile"})
+<main>
+    <section class="my-120">
+        <div class="container">
+            <div class="details">
+                <div class="details-wrapper">
+                    <div class="details-auth">
+                        <div class="details-auth-thumb">
+                            <img src="assets/images/team/1.png" class="fit-image" alt="img">
+                        </div>
+                        <div class="details-auth-content">
+                            <h3 class="name h4">Earth Photart</h3>
+                            <p class="desc">I am passionate about travel and photography, and here I share my adventures
+                                around the world 📷</p>
+
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-facebook"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-instagram"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.x.com/" class="social-list__link" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i> </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="details-action">
+                        <a href="" class="btn btn btn--base">Hire Me</a>
+                    </div>
+                </div>
+                <div class="details-info">
+                    <div class="details-info__item">
+                        <h4 class="value">151.1M</h4>
+                        <p class="label">Total Views</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">4.9</h4>
+                        <p class="label">Average Rating</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">1,248</h4>
+                        <p class="label">Photos Uploaded</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">4.3</h4>
+                        <p class="label">Featured Reviews</p>
+                    </div>
+
+                </div>
+                <div class="custom--tab-wrapper">
+                    <ul class="nav nav-tabs custom--tab">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#day-one"
+                                type="button">
+                                All Photos
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-two" type="button">
+                                Reviews
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-three" type="button">
+                                Packages
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-four" type="button">
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="day-one">
+                        <div class="photo-wrapper">
+                            @@for(let i = 20; i > 0; i--){
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/`+i+`.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="day-two">
+                        <div id="details-body-review">
+                            <div class="flex-between mb-4">
+                                <h4>Reviews</h4>
+                                <button class="btn btn--base btn--xsm" data-bs-toggle="modal"
+                                    data-bs-target="#writeReviewModal">Write a
+                                    review</button>
+                            </div>
+
+                            <div class="review-info">
+                                <div class="review-info-average">
+                                    <h2 class="count">4.6</h2>
+                                    <div class="rating">
+                                        <p class="rating-item">
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                        </p>
+                                    </div>
+                                    <p class="desc">based on 6,854 reviews</p>
+                                </div>
+                                <div class="review-info-count">
+                                    <p class="text">Total reviews and rating from Viator & TravelLab</p>
+                                    <div class="review-info-count-item">
+                                        <span class="label">5 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 75%"></div>
+                                        </div>
+                                        <span class="value">5527</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">4 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 22%"></div>
+                                        </div>
+                                        <span class="value">622</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">3 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 6%"></div>
+                                        </div>
+                                        <span class="value">292</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">2 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 9%"></div>
+                                        </div>
+                                        <span class="value">122</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">3 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 5%"></div>
+                                        </div>
+                                        <span class="value">291</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="review-wrapper">
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/2.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Emily Carter
+                                            </p>
+                                            <p class="time">2h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Living Art: Koi are known for their bright colors and
+                                            beautiful
+                                            patterns — they’re often called
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/1.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                John Doe
+                                            </p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+                                        <p class="comment-item-text">
+                                            This is another great comment! Keep up the good work.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/3.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Sophia Martinez
+                                            </p>
+                                            <p class="time">3h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Absolutely loved the experience! Everything was smooth, fast, and
+                                            very easy to understand.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/4.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Daniel Wilson
+                                            </p>
+                                            <p class="time">6h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Great quality and attention to detail. I’d definitely recommend
+                                            this to others.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/1.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Aisha Rahman
+                                            </p>
+                                            <p class="time">2 days ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Very impressed with the service and support. Everything worked
+                                            exactly as expected.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="day-three">
+                        <div class="pricing-card-wrapper">
+                            <div class="row gy-5">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Basic Shoot</h3>
+                                            <p class="pricing-card__note">For newcomers taking their first steps</p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$49 <span>/ session</span></h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--dark w-100">Book Now</button>
+                                        </div>
+
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">30 Minutes Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">10 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">1 Location</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 48 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <p class="pricing-card__base">✦ Special Offer</p>
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Standard Shoot</h3>
+                                            <p class="pricing-card__note">Perfect for personal or small brand sessions
+                                            </p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$99 <span>/ session</span></h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--base w-100">Book Now</button>
+                                        </div>
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">1 Hour Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">25 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Up to 2 Locations</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 24 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Premium Shoot</h3>
+                                            <p class="pricing-card__note">Best for professional and commercial projects
+                                            </p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$199 <span>/ session</span>
+                                                </h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--dark w-100">Book Now</button>
+                                        </div>
+
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">2 Hour Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">50 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Multiple Locations</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Priority Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 12 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="day-four">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <div class="contact-form style-two">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <label class="form--label">Email Address</label>
+                                            <input type="text" class="form--control">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form--label">Subject</label>
+                                            <input type="text" class="form--control">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form--label">Write Messages</label>
+                                            <textarea class="form--control"
+                                                placeholder="Write your message..."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="btn btn--base w-100">Send Messages</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="contact-thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/contact.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modal -->
+<div class="modal custom--modal fade" id="writeReviewModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="writeReviewModalLabel">Write a review</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="la la-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label class="form--label d-block">Your rating</label>
+
+                        <div class="rating-group">
+                            <input disabled checked class="rating__input" name="rating2" id="rating2-none" type="radio">
+                            <label class="rating__label" for="rating2-1"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-1" value="1" type="radio">
+                            <label class="rating__label" for="rating2-2"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-2" value="2" type="radio">
+                            <label class="rating__label" for="rating2-3"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-3" value="3" type="radio">
+                            <label class="rating__label" for="rating2-4"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-4" value="4" type="radio">
+                            <label class="rating__label" for="rating2-5"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-5" value="5" type="radio">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form--label">Your review</label>
+                        <textarea class="form--control"></textarea>
+                    </div>
+
+                    <button class="btn btn--base w-100">Submit review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+@@include('../layout/_footer.html')
+@@include('../layout/_template-bottom.html')

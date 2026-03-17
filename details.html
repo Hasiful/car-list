@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> AI Presentation And Documentation </title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Odometer -->
+  <link rel="stylesheet" href="assets/css/odometer.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- wow -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader-p"></div>
+</div>
+<!--==================== Preloader End ====================-->
+  <!--==================== Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-up"></i></a>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Header Start Here ==================== -->
+<header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="img">
+            </a>
+
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+
+            <div class="offcanvas border-0 offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="img">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-menu align-items-xl-center justify-content-center w-100">
+                        <li class="nav-item d-xl-none">
+                            <div class="dropdown lang-box">
+                                <button class="lang-box-btn" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                                        </path>
+                                    </svg>
+                                    <span class="text">English</span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down"></i>
+                                    </span>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li class="lang-box-item" data-code="en">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/us.png" alt="usa">
+                                            </div>
+                                            <span class="text">Enlish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item selected" data-code="hn">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/bd.png" alt="bd">
+                                            </div>
+                                            <span class="text">Bangla</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sp.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Spanish</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/sa.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Arabic</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/pak.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">Urdu</span>
+                                        </a>
+                                    </li>
+                                    <li class="lang-box-item" data-code="es">
+                                        <a href="" class="lang-box-link">
+                                            <div class="thumb">
+                                                <img src="assets/images/flags/fr.png" alt="Spanish">
+                                            </div>
+                                            <span class="text">French</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="photographer.html">Photographer</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item d-xl-none d-block">
+                            <a href="login.html" class="btn w-100 btn--md btn--base">
+                                <span class="icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </span>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-right d-none d-xl-flex">
+                <div class="dropdown lang-box">
+                    <button class="lang-box-btn" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" role="img" width="20px" height="20px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M18.234 2.5A3.266 3.266 0 0121.5 5.766v8.906a3.266 3.266 0 01-3.266 3.265h-1.289c-.34 0-.67.118-.934.332l-3.747 3.033a.892.892 0 01-1.451-.693v-2.375a.297.297 0 00-.297-.297h-4.75A3.266 3.266 0 012.5 14.673V5.766A3.266 3.266 0 015.766 2.5zM5.491 3.938c-.82 0-1.528 1.008-1.528 1.828v8.99c0 .82.665 1.604 1.484 1.604h5.046c1.148 0 1.98.871 1.98 2.019v.81l2.417-2.16c.581-.471 1.284-.669 2.032-.669h1.539c.82 0 1.507-.868 1.507-1.688l.044-9.293c0-.82-.665-1.441-1.485-1.441zM12 6.063a.89.89 0 01.824.553l2.672 6.532a.89.89 0 11-1.648.673l-.891-2.177h-1.914l-.89 2.177a.89.89 0 11-1.65-.673l2.673-6.532A.89.89 0 0112 6.063m-.374 4.156h.748L12 9.306z">
+                            </path>
+                        </svg>
+                        <span class="text">English</span>
+                        <span class="icon">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="lang-box-item" data-code="en">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/us.png" alt="usa">
+                                </div>
+                                <span class="text">Enlish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item selected" data-code="hn">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/bd.png" alt="bd">
+                                </div>
+                                <span class="text">Bangla</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sp.png" alt="Spanish">
+                                </div>
+                                <span class="text">Spanish</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/sa.png" alt="Spanish">
+                                </div>
+                                <span class="text">Arabic</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/pak.png" alt="Spanish">
+                                </div>
+                                <span class="text">Urdu</span>
+                            </a>
+                        </li>
+                        <li class="lang-box-item" data-code="es">
+                            <a href="" class="lang-box-link">
+                                <div class="thumb">
+                                    <img src="assets/images/flags/fr.png" alt="Spanish">
+                                </div>
+                                <span class="text">French</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="btn btn--dark">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+<!-- ==================== Breadcrumb Start Here ==================== -->
+<div class="breadcrumb">
+    <div class="breadcrumb__bg">
+        <video class="fit-image" muted loop autoplay src="assets/images/thumbs/shape.mp4"></video>
+    </div>
+    <div class="container">
+        <h2 class="breadcrumb__title">Photographer Profile</h2>
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a> </li>
+            <li class="breadcrumb__item">/</li>
+            <li class="breadcrumb__item"> <span class="breadcrumb__item-text">Photographer Profile</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ==================== Breadcrumb End Here ==================== -->
+<main>
+    <section class="my-120">
+        <div class="container">
+            <div class="details">
+                <div class="details-wrapper">
+                    <div class="details-auth">
+                        <div class="details-auth-thumb">
+                            <img src="assets/images/team/1.png" class="fit-image" alt="img">
+                        </div>
+                        <div class="details-auth-content">
+                            <h3 class="name h4">Earth Photart</h3>
+                            <p class="desc">I am passionate about travel and photography, and here I share my adventures
+                                around the world 📷</p>
+
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-facebook"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-instagram"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.x.com/" class="social-list__link" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i> </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i> </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="details-action">
+                        <a href="" class="btn btn btn--base">Hire Me</a>
+                    </div>
+                </div>
+                <div class="details-info">
+                    <div class="details-info__item">
+                        <h4 class="value">151.1M</h4>
+                        <p class="label">Total Views</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">4.9</h4>
+                        <p class="label">Average Rating</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">1,248</h4>
+                        <p class="label">Photos Uploaded</p>
+                    </div>
+
+                    <div class="details-info__item">
+                        <h4 class="value">4.3</h4>
+                        <p class="label">Featured Reviews</p>
+                    </div>
+
+                </div>
+                <div class="custom--tab-wrapper">
+                    <ul class="nav nav-tabs custom--tab">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#day-one"
+                                type="button">
+                                All Photos
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-two" type="button">
+                                Reviews
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-three" type="button">
+                                Packages
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#day-four" type="button">
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="day-one">
+                        <div class="photo-wrapper">
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/20.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/19.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/18.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/17.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/16.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/15.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/14.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/13.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/12.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/11.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/10.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/9.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/8.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/7.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/6.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/5.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/4.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/3.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/2.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="photo-item" data-bs-toggle="modal" data-bs-target="#previewModal">
+                                <div class="photo-item-wrapper">
+                                    <a href="photo-details.html" class="photo-item-thumb">
+                                        <img src="assets/images/photos/1.png" alt="img">
+                                    </a>
+                                    <div class="photo-item-content">
+                                        <a href="" class="photo-item-author">
+                                            <span class="thumb">
+                                                <img src="assets/images/clients/2.png" alt="img">
+                                            </span>
+                                            <span class="name">Matteo Milan</span>
+                                        </a>
+                                        <div class="photo-item-rating">
+                                            <span class="average">4.9</span>
+                                            <span class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="count">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="day-two">
+                        <div id="details-body-review">
+                            <div class="flex-between mb-4">
+                                <h4>Reviews</h4>
+                                <button class="btn btn--base btn--xsm" data-bs-toggle="modal"
+                                    data-bs-target="#writeReviewModal">Write a
+                                    review</button>
+                            </div>
+
+                            <div class="review-info">
+                                <div class="review-info-average">
+                                    <h2 class="count">4.6</h2>
+                                    <div class="rating">
+                                        <p class="rating-item">
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                            <i class="la la-star"></i>
+                                        </p>
+                                    </div>
+                                    <p class="desc">based on 6,854 reviews</p>
+                                </div>
+                                <div class="review-info-count">
+                                    <p class="text">Total reviews and rating from Viator & TravelLab</p>
+                                    <div class="review-info-count-item">
+                                        <span class="label">5 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 75%"></div>
+                                        </div>
+                                        <span class="value">5527</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">4 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 22%"></div>
+                                        </div>
+                                        <span class="value">622</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">3 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 6%"></div>
+                                        </div>
+                                        <span class="value">292</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">2 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 9%"></div>
+                                        </div>
+                                        <span class="value">122</span>
+                                    </div>
+                                    <div class="review-info-count-item">
+                                        <span class="label">3 stars</span>
+                                        <div class="progress">
+                                            <div class="progress-bar bg--base" style="width: 5%"></div>
+                                        </div>
+                                        <span class="value">291</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="review-wrapper">
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/2.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Emily Carter
+                                            </p>
+                                            <p class="time">2h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Living Art: Koi are known for their bright colors and
+                                            beautiful
+                                            patterns — they’re often called
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/1.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                John Doe
+                                            </p>
+                                            <p class="time">1 day ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+                                        <p class="comment-item-text">
+                                            This is another great comment! Keep up the good work.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/3.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Sophia Martinez
+                                            </p>
+                                            <p class="time">3h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Absolutely loved the experience! Everything was smooth, fast, and
+                                            very easy to understand.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/4.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Daniel Wilson
+                                            </p>
+                                            <p class="time">6h ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Great quality and attention to detail. I’d definitely recommend
+                                            this to others.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="comment-item-thumb">
+                                        <img src="assets/images/clients/1.png" alt="img">
+                                    </div>
+                                    <div class="comment-item-content">
+                                        <div class="comment-item-top">
+                                            <p class="name">
+                                                Aisha Rahman
+                                            </p>
+                                            <p class="time">2 days ago</p>
+                                        </div>
+                                        <div class="rating mt-2">
+                                            <p class="rating-item">
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                                <i class="la la-star"></i>
+                                            </p>
+                                        </div>
+
+                                        <p class="comment-item-text">
+                                            Very impressed with the service and support. Everything worked
+                                            exactly as expected.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="day-three">
+                        <div class="pricing-card-wrapper">
+                            <div class="row gy-5">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Basic Shoot</h3>
+                                            <p class="pricing-card__note">For newcomers taking their first steps</p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$49 <span>/ session</span></h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--dark w-100">Book Now</button>
+                                        </div>
+
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">30 Minutes Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">10 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">1 Location</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 48 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <p class="pricing-card__base">✦ Special Offer</p>
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Standard Shoot</h3>
+                                            <p class="pricing-card__note">Perfect for personal or small brand sessions
+                                            </p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$99 <span>/ session</span></h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--base w-100">Book Now</button>
+                                        </div>
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">1 Hour Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">25 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Up to 2 Locations</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 24 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="pricing-card">
+                                        <div class="pricing-card__top">
+                                            <h3 class="pricing-card__title h6">Premium Shoot</h3>
+                                            <p class="pricing-card__note">Best for professional and commercial projects
+                                            </p>
+                                            <div class="pricing-card-pricing">
+                                                <h4 class="pricing-card-pricing__amount">$199 <span>/ session</span>
+                                                </h4>
+                                            </div>
+                                            <p class="pricing-card__for">Billed quarterly</p>
+                                            <button class="btn btn--md btn--dark w-100">Book Now</button>
+                                        </div>
+
+                                        <ul class="pricing-list">
+                                            <li class="pricing-list__item">
+                                                <p class="text">2 Hour Photoshoot</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">50 Professionally Edited Photos</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Multiple Locations</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Priority Online Gallery Delivery</p>
+                                            </li>
+                                            <li class="pricing-list__item">
+                                                <p class="text">Delivery within 12 Hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="day-four">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <div class="contact-form style-two">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <label class="form--label">Email Address</label>
+                                            <input type="text" class="form--control">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form--label">Subject</label>
+                                            <input type="text" class="form--control">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form--label">Write Messages</label>
+                                            <textarea class="form--control"
+                                                placeholder="Write your message..."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="" class="btn btn--base w-100">Send Messages</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="contact-thumb">
+                                    <img class="fit-image" src="assets/images/thumbs/contact.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modal -->
+<div class="modal custom--modal fade" id="writeReviewModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="writeReviewModalLabel">Write a review</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="la la-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="form-group">
+                        <label class="form--label d-block">Your rating</label>
+
+                        <div class="rating-group">
+                            <input disabled checked class="rating__input" name="rating2" id="rating2-none" type="radio">
+                            <label class="rating__label" for="rating2-1"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-1" value="1" type="radio">
+                            <label class="rating__label" for="rating2-2"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-2" value="2" type="radio">
+                            <label class="rating__label" for="rating2-3"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-3" value="3" type="radio">
+                            <label class="rating__label" for="rating2-4"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-4" value="4" type="radio">
+                            <label class="rating__label" for="rating2-5"><i
+                                    class="rating__icon rating__icon--star la la-star"></i></label>
+                            <input class="rating__input" name="rating2" id="rating2-5" value="5" type="radio">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form--label">Your review</label>
+                        <textarea class="form--control"></textarea>
+                    </div>
+
+                    <button class="btn btn--base w-100">Submit review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="row gy-4 gy-sm-5 justify-content-between">
+            <div class="col-lg-4 pe-lg-5">
+                <div class="footer-item">
+                    <a class="footer-item__logo" href="">
+                        <img src="assets/images/logo/logo.png" alt="img">
+                    </a>
+
+                    <p class="footer-item__desc">
+                        ThumbLab is an AI-powered thumbnail and visual content creator. Generate stunning YouTube
+                        thumbnails, gig images, Reels covers, or branding kits in seconds.
+                    </p>
+
+                    <ul class="social-list mt-4">
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-facebook"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.instagram.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-instagram"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.x.com/" class="social-list__link" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i> </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.linkedin.com/" class="social-list__link" target="_blank">
+                                <i class="fab fa-linkedin-in"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-6">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Useful Links</h2>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Home</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="/blog">Blog</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xsm-6">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Policy Links</h2>
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Privacy Policy</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Terms of Service</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="footer-item">
+                    <h2 class="footer-item__title h6">Contact Info</h2>
+                    <ul class="footer-contact">
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <p>28 Benin, south of Niger #5 San Francisco</p>
+                            </div>
+                        </li>
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <a href="mailto:support@thumblab.com" class="link"> support@thumblab.com </a>
+                            </div>
+                        </li>
+                        <li class="footer-contact__item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="content">
+                                <a href="tel:+523-00000000" class="link"> +523-00000000 </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="footer-text">Photorate</h1>
+    </div>
+</footer>
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Viewport js -->
+<script src="assets/js/viewport.jquery.js"></script>
+<!-- select2 -->
+<script src="assets/js/select2.min.js"></script>
+<!-- wow -->
+<script src="assets/js/wow.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

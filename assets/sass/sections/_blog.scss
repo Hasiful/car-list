@@ -1,0 +1,54 @@
+/* ================================= Blog Section Css Start Here ============================= */
+.blog-item {
+  border-radius: 16px;
+  background: hsl(var(--white));
+  overflow: hidden;
+  --inner-p: 16px;
+  height: 100%;
+
+  @include msm-screen {
+    --inner-p: 12px;
+  }
+
+  &__thumb {
+    border-radius: 12px;
+    overflow: hidden;
+
+    .link {
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: var(--inner-p);
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsl(var(--border-color) / .5);
+
+    .link {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__date {
+    font-size: rem(14px);
+    font-weight: 600;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+  }
+}
+
+/* ================================= Blog Section Css End Here ================================= */

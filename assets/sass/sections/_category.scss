@@ -1,0 +1,97 @@
+.category-item {
+    border-radius: 12px;
+    padding: 16px;
+    background: #f6f6f6;
+    position: relative;
+    display: block;
+    z-index: 1;
+    text-align: center;
+
+    &-name {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: hsl(var(--heading-color));
+
+        @include xl-screen {
+            font-size: 1rem;
+        }
+    }
+
+    &-count {
+        font-size: 0.875rem;
+        font-weight: 300;
+    }
+
+    &-thumb {
+        pointer-events: none;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        background-color: hsl(var(--white));
+    }
+
+    &:hover {
+        .category-item-arrow-inner i {
+            transform: rotate(0deg);
+        }
+    }
+
+    &-arrow {
+        --size: 48px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: hsl(var(--white));
+        height: var(--size);
+        width: var(--size);
+        border-radius: 12px;
+        font-size: 20px;
+        --radius: 12px;
+        --circle-size: 24px;
+
+        &-inner {
+            border-radius: 50%;
+            background-color: hsl(var(--base));
+            height: calc(var(--size) * .85);
+            width: calc(var(--size) * .85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: calc(var(--size) * .15);
+            position: relative;
+            color: hsl(var(--white));
+            z-index: 2;
+
+            i {
+                transition: all linear 0.3s;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            bottom: 0;
+            width: var(--circle-size);
+            height: var(--circle-size);
+            background: transparent;
+            border-top-left-radius: var(--radius);
+            box-shadow: -10px -10px 0 0 hsl(var(--white));
+            transform: rotate(180deg);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -0px;
+            top: -25px;
+            width: var(--circle-size);
+            height: var(--circle-size);
+            background: transparent;
+            border-top-left-radius: var(--radius);
+            box-shadow: -10px -10px 0 0 hsl(var(--white));
+            transform: rotate(180deg);
+        }
+    }
+}

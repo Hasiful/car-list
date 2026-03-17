@@ -1,0 +1,146 @@
+.statistic-content {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &-title {
+        display: inline-flex;
+        position: relative;
+        font-size: 120px;
+        color: hsl(var(--base));
+        text-shadow: 0 10px 15px #ff4c0080;
+
+        @include lg-screen {
+            font-size: 90px;
+        }
+
+        @include sm-screen {
+            font-size: 72px;
+        }
+
+        .tooltip-text {
+            position: absolute;
+            bottom: 20%;
+            right: 0;
+            font-size: 14px;
+            font-weight: 400;
+            color: hsl(var(--black));
+            border: 1px solid hsl(var(--border-color));
+            background-color: hsl(var(--white));
+            padding: 6px 16px;
+            border-radius: 32px;
+            z-index: 2;
+            transform: rotate(12deg);
+
+
+            @include lg-screen {
+                font-size: 13px;
+                padding: 4px 12px;
+            }
+        }
+    }
+
+    &-globe {
+        mix-blend-mode: darken;
+        position: relative;
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    &-shape {
+        filter: blur(25px);
+        user-select: none;
+        pointer-events: none;
+        z-index: 1;
+        height: auto;
+        position: absolute;
+        bottom: -25px;
+        left: -120px;
+        right: -120px;
+        overflow: visible;
+        height: 530px;
+
+        @include md-screen {
+            height: 370px;
+        }
+
+        @include msm-screen {
+            bottom: -50px;
+        }
+
+        @include xsm-screen {
+            bottom: -100px;
+        }
+    }
+}
+
+.statistics-wrapper {
+    --gap: 120px;
+    display: flex;
+    gap: var(--gap);
+    justify-content: space-between;
+    max-width: max-content;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include lg-screen {
+        --gap: 64px
+    }
+
+    @include md-screen {
+        bottom: 60px;
+    }
+
+    @include msm-screen {
+        --gap: 24px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @include xsm-screen {
+        bottom: 20px;
+    }
+}
+
+.statistics-item {
+    text-align: center;
+
+    &-count {
+        font-weight: 700;
+        color: hsl(var(--heading-color));
+        margin-bottom: 6px;
+        white-space: nowrap;
+
+        @include msm-screen {
+            font-size: 20px;
+        }
+    }
+
+    &-title {
+        color: hsl(var(--heading-color));
+        font-weight: 500;
+        white-space: nowrap;
+
+        @include md-screen {
+            font-size: 14px;
+        }
+
+
+        @include msm-screen {
+            white-space: wrap;
+        }
+
+        @include xsm-screen {
+            font-size: 12px;
+        }
+    }
+
+}

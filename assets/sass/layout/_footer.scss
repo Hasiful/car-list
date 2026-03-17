@@ -1,0 +1,137 @@
+/* ========================= Footer CSS Start ============================= */
+.footer {
+  margin-top: auto;
+  overflow: hidden;
+  background: linear-gradient(#f7f7f7 0%, hsl(var(--base-l-800)) 44%, hsl(var(--base-l-700)) 64%, hsl(var(--base-l-600)) 80.1618%, hsl(var(--base-l-500)) 100%);
+
+  &-wrapper {
+    --inner-p: 48px;
+    --radius: 24px;
+    background: linear-gradient(hsl(var(--white)) 0%, hsl(var(--white) / .7) 100%);
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--inner-p) var(--inner-p) 0;
+    border-radius: var(--radius) var(--radius) 0 0;
+
+    @include lg-screen {
+      --inner-p: 32px;
+      --radius: 20px;
+    }
+
+    @include sm-screen {
+      --inner-p: 24px;
+      --radius: 16px;
+    }
+  }
+}
+
+.footer-item__logo {
+  margin-bottom: 16px;
+}
+
+.footer-item__logo img {
+  max-width: 184px;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 374px) {
+  .footer-item__logo img {
+    max-width: 164px;
+  }
+}
+
+.footer-item__title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.125rem;
+  color: hsl(var(--black));
+  line-height: 1;
+}
+
+.footer-item__desc {
+  font-weight: 400;
+  line-height: 150%;
+  color: hsl(var(--black));
+
+  @include sm-screen {
+    font-size: 0.875rem;
+  }
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-menu__link {
+  font-size: 1rem;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: hsl(var(--black) / .75);
+  transition: all linear 0.3s;
+
+  &:hover {
+    color: hsl(var(--black));
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-menu__link {
+    font-size: 0.875rem;
+  }
+
+  .footer-item__title {
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+
+  .footer-menu__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.footer-contact {
+  &__item {
+    display: flex;
+    gap: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    .content {
+      & :is(p, a) {
+        color: hsl(var(--black) / .75);
+
+        &:hover {
+          color: hsl(var(--black));
+        }
+
+        @include sm-screen {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    .icon {
+      color: hsl(var(--black));
+    }
+  }
+}
+
+.footer-text {
+  background: linear-gradient(0deg, transparent 24.199394707207208%, hsl(var(--black) / .05) 54.58016610360361%, hsl(var(--black) / .1) 76.99007601351353%, hsl(var(--black)) 100%);
+  display: block;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2.625rem, -0.3685rem + 14.9677vw, 17.125rem);
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 24px;
+}

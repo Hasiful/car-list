@@ -1,0 +1,130 @@
+.pricing-card {
+    padding: 32px;
+    border-radius: 12px;
+    height: 100%;
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 10px rgba(19, 21, 21, 0.05);
+    background-color: hsl(var(--white));
+
+    &__base {
+        --inner-p: 50px;
+        position: absolute;
+        height: calc(100% + var(--inner-p));
+        width: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(-1 * (var(--inner-p) - 5px));
+        background-color: hsl(var(--base));
+        z-index: -1;
+        border-radius: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: hsl(var(--white));
+        padding-top: 12px;
+    }
+
+    &:has(.pricing-card__base) {
+
+        @include msm-screen {
+            margin-top: 16px;
+        }
+
+        &::after {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background-color: hsl(var(--white));
+            z-index: -1;
+            border-radius: 16px;
+        }
+    }
+
+
+    @include xl-screen {
+        padding: 24px;
+    }
+
+    @include sm-screen {
+        padding: 16px;
+    }
+
+    &__title {
+        margin-bottom: 4px;
+    }
+
+    &__note {
+        margin-bottom: 24px;
+        font-size: 14px;
+        color: hsl(var(--black) / .5);
+        font-weight: 500;
+    }
+
+    &-pricing {
+        margin-bottom: 6px;
+
+        &__amount {
+            span {
+                font-size: 1rem;
+                font-weight: 600;
+                color: hsl(var(--black) / .5);
+            }
+        }
+    }
+
+    &__for {
+        margin-bottom: 24px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        color: hsl(var(--black) / .5);
+        font-weight: 500;
+    }
+}
+
+.pricing-list {
+    margin-top: 24px;
+    position: relative;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .text {
+            font-size: 0.9125rem;
+            font-weight: 500;
+            color: hsl(var(--black) / .5);
+
+            @include md-screen {
+                font-size: 0.875rem;
+            }
+        }
+
+        &::before {
+            content: '\f058';
+            font-family: 'Line Awesome Free';
+            color: hsl(var(--success));
+            flex-shrink: 0;
+            font-weight: 400;
+            font-size: 1.125rem;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.pricing-card-wrapper {
+    &:has(.pricing-card__base) {
+        margin-top: 100px;
+
+        @include msm-screen {
+            margin-top: 60px;
+        }
+    }
+}

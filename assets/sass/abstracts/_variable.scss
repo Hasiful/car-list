@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+:root {
+  --body-font: "Google Sans Flex", sans-serif;
+  --heading-font: "Stack Sans Headline", sans-serif;
+
+  /* ========================= Theme Color Start ============================= */
+
+  /* Base Color */
+  @include colorVariable(--base, #c7120e, 10);
+
+  /* Base Two Color */
+  @include colorVariable(--base-two, #fb9040, 10);
+
+  /* ========================= Theme Color End ============================= */
+
+
+  /* ========================= Color Variables Start =========================== */
+  // White Color
+  @include colorVariable(--white, #FFFFFF);
+  // Body Color
+  @include colorVariable(--body-color, #6A7282);
+  // heading-color
+  @include colorVariable(--heading-color, #030712);
+  // dark
+  @include colorVariable(--dark, #020203, 5);
+  // Black Color
+  @include colorVariable(--black, #000);
+  // light Color
+  @include colorVariable(--light, #D1D5DC);
+
+
+  //Border Color 
+  @include colorVariable(--border-color, #e9e9eb);
+
+  // Section Background
+  @include colorVariable(--section-bg, #F3F4F6);
+
+  // body color
+  @include colorVariable(--background-color, #fff);
+
+  --gr-color: linear-gradient(150deg, hsl(var(--black)), hsl(var(--base)) 33%, hsl(var(--base-l-200)) 50%, hsl(var(--base-two)) 64%);
+  --gr-color-two: linear-gradient(81deg, hsl(var(--black)), hsl(var(--base)) 33%, hsl(var(--base-l-200)) 50%, hsl(var(--base-two)));
+
+  /* ================================ Box Shadow Start =============================== */
+  // Header Box shadow
+  --header-box-shadow: 0px -1px 15px 3px hsl(var(--black) / 0.3);
+  // Mobile bottom fix menu box shadow
+  --mobile-box-shadow: 0px -1px 5px 0px hsl(var(--black) / 0.92);
+  // Card box shadow
+  --box-shadow: 0px 2px 15px hsl(var(--black) / 0.05);
+  /* ================================ Box Shadow End =============================== */
+
+  /* ============================== Bootstrap Modifier Start ============================== */
+  /* Primary Color */
+  @include colorVariable(--primary, #030712, 5);
+
+  /* Secondary Color */
+  @include colorVariable(--secondary, #364153, 5);
+
+  /* Success Color */
+  @include colorVariable(--success, #22C55E, 5);
+
+  /* Danger Color */
+  @include colorVariable(--danger, #EF4444, 5);
+
+  /* Warning Color */
+  @include colorVariable(--warning, #FDC700, 5);
+
+  /* Info Color */
+  @include colorVariable(--info, #3B82F6, 5);
+
+  /* ============================== Bootstrap Modifier End ============================== */
+}
+
+/* ========================= Css Variables End =========================== */
