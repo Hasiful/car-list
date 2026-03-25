@@ -1,41 +1,59 @@
 <!--========================== Testimonials Section Start ==========================-->
 
-<section class="testimonials my-120">
-    <div class=" container">
-        <div class="section-heading style-center wow fadeInUp" data-wow-delay="0.2s">
-            <div class="section-heading-content">
-                <p class="section-heading-name"> Testimonials </p>
-                <h2 class="section-heading-text h4">
-                    See what our <span class="highlight">
-                        community members
-                    </span> are saying about their experience.
-                </h2>
-            </div>
-        </div>
-        <div class="testimonial-slider wow fadeInDown" data-wow-delay="0.2s">
-            @@for(let i = 5; i > 0; i --){
-            <div class="testimonial-item">
-                <div class="testimonial-item__header">
-                    Luminex <span class="date">/ Nov 22, 2025</span>
-                </div>
-                <div class="testimonial-item__body">
-                    <div class="testimonial-item__auth">
-                        <div class="testimonial-item__auth-thumb">
-                            <img src="assets/images/team/`+i+`.png" alt="img">
-                        </div>
-                        <div class="testimonial-item__auth-content">
-                            <p class="testimonial-item__auth-name">Emma Collins</p>
-                            <p class="testimonial-item__auth-designation">Startup Founder</p>
+<section class="testimonials my-120 bg-img" data-background-image="assets/images/thumbs/bg.png">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            <div class="col-md-6">
+                <div class="testimonial-content">
+                    <div class="section-heading style-white wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="section-heading-content">
+                            <p class="section-heading-name">
+                                Testimonials
+                            </p>
+                            <h2 class="section-heading-title">
+                                What our <span class="highlight">
+                                    clients say
+                                </span>
+                            </h2>
+                            <p class="section-heading-desc">
+                                Compare verified listings from dealers and private sellers, then book a test drive in
+                                minutes.
+                            </p>
                         </div>
                     </div>
-                    <p class="testimonial-item__desc">
-                        As someone with zero coding experience, I was worried about building my website. But this
-                        template
-                        made it so Simple
-                    </p>
+
+                    <div class="testimonial-info">
+                        <h4 class="testimonial-info-count">60,000+</h4>
+                        <p class="testimonial-info-title">
+                            reviews on google
+                        </p>
+                    </div>
                 </div>
             </div>
-            }
+            <div class="col-md-6">
+                <div class="testimonial-slider">
+                    @@for(let i = 2; i > 0; i--){
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__thumb">
+                            <img src="assets/images/clients/`+i+`.webp" alt="Esther Howard">
+                        </div>
+
+                        <p class="testimonial-card__text">
+                            This platform has completely transformed how I trade. The AI insights are accurate,
+                            fast,
+                            and
+                            incredibly easy to use. I've never felt more confident in my decisions.
+                        </p>
+                        <div class="testimonial-card__auth">
+                            <div class="content">
+                                <p class="name">Esther Howard</p>
+                                <p class="role">Marketer</p>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
         </div>
     </div>
 </section>

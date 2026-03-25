@@ -1,23 +1,20 @@
 /* ====================== Breadcrumb Css Start ==================== */
 .breadcrumb {
   --inner-p: 80px;
+  --outer-gap: 12px;
   position: relative;
   z-index: 1;
   overflow: hidden;
   padding-block: calc(var(--header-h) + var(--inner-p)) var(--inner-p);
   margin-bottom: 0;
+  margin: var(--outer-gap);
+  margin-top: calc(-1 * (var(--header-h) - var(--outer-gap)));
+  background: var(--gr-color);
+  border-radius: 24px;
+
 
   @include md-screen {
     --inner-p: 60px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-color: hsl(var(--white)/0.4);
-    backdrop-filter: blur(4px);
   }
 
   &__bg {

@@ -1,0 +1,57 @@
+.all-listing {
+    background: var(--gr-color);
+    position: relative;
+    z-index: 1;
+    margin-inline: 12px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    &-shape {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        backdrop-filter: blur(3px);
+        opacity: .2;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hsl(var(--black));
+        opacity: 0.3;
+        z-index: -1;
+    }
+}
+
+.all-listing-wrapper {
+    --gap: 24px;
+    --count: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+    @include xl-screen {
+        --count: 3;
+    }
+
+    @include md-screen {
+        --gap: 16px;
+        --count: 2;
+    }
+
+    @include msm-screen {
+        --count: 1;
+    }
+
+    .car-item {
+        width: calc(100% / var(--count) - (var(--gap) - var(--gap) / var(--count)));
+        margin-right: var(--gap);
+        margin-bottom: var(--gap);
+        margin: 0;
+        height: auto;
+    }
+}

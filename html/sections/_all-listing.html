@@ -1,0 +1,94 @@
+<section class="py-120 all-listing">
+    <div class="all-listing-shape">
+        <img class="fit-image" src="assets/images/thumbs/shape.webp" alt="shape">
+    </div>
+
+    <div class="container">
+        <div class="section-heading style-white wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-heading-content">
+                <p class="section-heading-name">
+                    Premium Inventory
+                </p>
+                <h2 class="section-heading-title mb-0">
+                    All Cars <span class="highlight">
+                        in One Place
+                    </span>
+                </h2>
+            </div>
+            <p class="section-heading-desc">
+                Find, compare, and choose from a complete collection of cars tailored to your budget and lifestyle.
+            </p>
+        </div>
+
+        <div class="all-listing-wrapper">
+            @@for(let i = 9; i > 1; i--){
+            <div class="car-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="car-item-thumb">
+                    <img src="assets/images/car/`+i+`.png" alt="">
+                </div>
+                <div class="car-item-content">
+                    <div class="car-item-price">
+                        <span class="start-price">$36,750</span>
+                        -
+                        <span class="start-price">$36,750</span>
+                    </div>
+
+                    <div class="car-item-header">
+                        <p class="car-item-title">BMW, 2 Series Gran Coupe</p>
+                        <p class="car-item-model">2023 - 220I M SPORT GRAN COUPE 4-Door</p>
+                    </div>
+
+                    <div class="car-item-info">
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/chain.png" alt="">
+                            </span>
+                            <span class="value">1.5L</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">43.7k</span>
+                            <span class="value">Miles</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/pump.png" alt="">
+                            </span>
+                            <span class="value">Petrol</span>
+                        </div>
+                        <div class="car-item-info-item">
+                            <span class="label">
+                                <img src="assets/images/icon/car.png" alt="">
+                            </span>
+                            <span class="value">Coupe</span>
+                        </div>
+                    </div>
+                    <div class="car-item-dealer">
+                        <div class="contact">
+                            <span class="name">Auto House 1 Ltd </span>
+                            <a href="tel:02037636624" class="number">
+                                <span class="icon">
+                                    <i class="las la-phone"></i>
+                                </span>
+                                020 3763 6624
+                            </a>
+                        </div>
+
+                        <div class="car-item-rating">
+                            <span class="icon">
+                                <i class="las la-star"></i>
+                            </span>
+                            4.1/5 Stars
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="mt-4 mt-md-5 text-center">
+            <a href="#" class="btn btn--base">
+                Explore All Cars
+            </a>
+        </div>
+    </div>
+</section>

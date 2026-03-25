@@ -4,7 +4,122 @@
     z-index: 1;
 }
 
-.faq-thumb {
-    border-radius: 16px;
-    overflow: hidden;
+.faq-image {
+    position: relative;
+    --radius: 20px;
+
+    @include lg-screen {
+        --radius: 16px;
+    }
+
+    &-thumb {
+        border-radius: var(--radius);
+        overflow: hidden;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-contact {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 75%;
+        border-radius: 0 var(--radius);
+        background-color: hsl(var(--white));
+        padding-top: 12px;
+        padding-right: 12px;
+        --circle-size: 32px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -32px;
+            width: var(--circle-size);
+            height: var(--circle-size);
+            background: transparent;
+            border-top-left-radius: var(--radius);
+            box-shadow: -13px -13px 0 0 hsl(var(--white));
+            transform: rotate(-90deg);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -32px;
+            bottom: 0;
+            width: var(--circle-size);
+            height: var(--circle-size);
+            background: transparent;
+            border-top-left-radius: var(--radius);
+            box-shadow: -13px -13px 0 0 hsl(var(--white));
+            transform: rotate(-90deg);
+        }
+
+        &-wrapper {
+            border-radius: var(--radius);
+            background: var(--gr-color-two);
+            padding: 24px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            @include lg-screen {
+                padding: 16px;
+            }
+        }
+
+        &-shape {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            backdrop-filter: blur(3px);
+            opacity: .2;
+        }
+
+        .title {
+            margin-bottom: 32px;
+            color: hsl(var(--white));
+            max-width: 220px;
+        }
+
+        .link {
+            color: hsl(var(--white));
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .icon {
+                height: 24px;
+                width: 24px;
+                border-radius: 50%;
+                background-color: hsl(var(--white));
+                color: hsl(var(--black));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+
+                i {
+                    transition: all linear 0.2s;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &:hover {
+                text-decoration: underline;
+
+                .icon {
+                    i {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
 }

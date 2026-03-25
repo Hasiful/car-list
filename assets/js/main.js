@@ -106,32 +106,12 @@
 
             $('.testimonial-slider').slick({
                 ...sliderConfig,
-                slidesToShow: 3,
+                slidesToShow: 1,
                 arrows: true,
                 slidesToScroll: 1,
                 dots: false,
                 autoplay: false,
-
-                responsive: [
-                    {
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                        }
-                    }
-                ]
+                fade: true,
             });
 
             $('.top-car-slider').slick({
@@ -176,9 +156,7 @@
         // tooltips
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
     });
-
 
     // ==========================================
     //      End Document Ready function
