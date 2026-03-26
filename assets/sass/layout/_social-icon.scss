@@ -10,21 +10,17 @@
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    background-color: hsl(var(--white) / .3);
-    color: hsl(var(--black));
-    font-size: 24px;
+    background-color: hsl(var(--white) / .1);
+    color: hsl(var(--white));
+    font-size: 20px;
 
     @include md-screen {
-      font-size: 20px;
-    }
-
-    @include msm-screen {
       font-size: 18px;
     }
 
     &:hover {
-      background-color: hsl(var(--black) / .1);
-      color: hsl(var(--black));
+      background-color: hsl(var(--base));
+      color: hsl(var(--white));
     }
   }
 }

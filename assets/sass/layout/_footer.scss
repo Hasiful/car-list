@@ -1,28 +1,13 @@
 /* ========================= Footer CSS Start ============================= */
 .footer {
-  margin-top: auto;
+  --inner-m: 12px;
   overflow: hidden;
-  background: linear-gradient(#f7f7f7 0%, hsl(var(--base-l-800)) 44%, hsl(var(--base-l-700)) 64%, hsl(var(--base-l-600)) 80.1618%, hsl(var(--base-l-500)) 100%);
+  background: hsl(var(--black));
+  margin-inline: var(--inner-m);
+  margin-top: auto;
+  border-radius: 24px;
 
-  &-wrapper {
-    --inner-p: 48px;
-    --radius: 24px;
-    background: linear-gradient(hsl(var(--white)) 0%, hsl(var(--white) / .7) 100%);
-    width: 90%;
-    margin: 0 auto;
-    padding: var(--inner-p) var(--inner-p) 0;
-    border-radius: var(--radius) var(--radius) 0 0;
-
-    @include lg-screen {
-      --inner-p: 32px;
-      --radius: 20px;
-    }
-
-    @include sm-screen {
-      --inner-p: 24px;
-      --radius: 16px;
-    }
-  }
+  color: linear-gradient(150deg, black, #c7120e 33%, #f92319 50%, #f97316);
 }
 
 .footer-item__logo {
@@ -45,14 +30,14 @@
   position: relative;
   margin-bottom: 20px;
   font-size: 1.125rem;
-  color: hsl(var(--black));
+  color: hsl(var(--white));
   line-height: 1;
 }
 
 .footer-item__desc {
   font-weight: 400;
   line-height: 150%;
-  color: hsl(var(--black));
+  color: hsl(var(--white));
 
   @include sm-screen {
     font-size: 0.875rem;
@@ -71,11 +56,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  color: hsl(var(--black) / .75);
+  color: hsl(var(--white) / .75);
   transition: all linear 0.3s;
 
   &:hover {
-    color: hsl(var(--black));
+    color: hsl(var(--white));
     text-decoration: underline;
   }
 }
@@ -106,10 +91,10 @@
 
     .content {
       & :is(p, a) {
-        color: hsl(var(--black) / .75);
+        color: hsl(var(--white) / .75);
 
         &:hover {
-          color: hsl(var(--black));
+          color: hsl(var(--white));
         }
 
         @include sm-screen {
@@ -119,19 +104,44 @@
     }
 
     .icon {
-      color: hsl(var(--black));
+      color: hsl(var(--white));
     }
   }
 }
 
 .footer-text {
-  background: linear-gradient(0deg, transparent 24.199394707207208%, hsl(var(--black) / .05) 54.58016610360361%, hsl(var(--black) / .1) 76.99007601351353%, hsl(var(--black)) 100%);
+  background: var(--gr-color);
   display: block;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(2.625rem, -0.3685rem + 14.9677vw, 17.125rem);
+  font-size: clamp(3.375rem, -19.4608rem + 30.4478vw, 16.125rem);
   white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
   margin-top: 24px;
+}
+
+.footer-bottom {
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid hsl(var(--white) / .1);
+    margin-bottom: 50px;
+  }
+
+  &-text {
+    font-size: 1rem;
+    color: hsl(var(--white) / .75);
+
+    a {
+      font-weight: 500;
+      color: hsl(var(--white));
+      text-decoration: underline;
+    }
+  }
 }
