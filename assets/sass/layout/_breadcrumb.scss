@@ -9,9 +9,16 @@
   margin-bottom: 0;
   margin: var(--outer-gap);
   margin-top: calc(-1 * (var(--header-h) - var(--outer-gap)));
-  background: var(--gr-color);
   border-radius: 24px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--gr-color);
+    opacity: 0.75;
+  }
 
   @include md-screen {
     --inner-p: 60px;
@@ -25,7 +32,7 @@
 
   &__title {
     text-align: center;
-    color: hsl(var(--black));
+    color: hsl(var(--white));
     margin-bottom: 20px;
   }
 
@@ -37,20 +44,20 @@
 
   &__item {
     padding: 0 5px;
-    color: hsl(var(--black));
+    color: hsl(var(--white));
 
     &-text {
-      color: hsl(var(--black));
+      color: hsl(var(--white));
       font-weight: 700;
     }
   }
 
   &__link {
-    color: hsl(var(--black));
+    color: hsl(var(--white));
 
     &:hover,
     &:focus {
-      color: hsl(var(--black));
+      color: hsl(var(--white));
       text-decoration: underline;
     }
   }

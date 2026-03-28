@@ -70,6 +70,20 @@
         });
 
         // Sidebar Icon & Overlay js
+
+        // Sidebar Icon & Overlay js
+        $('.filter-toggle-btn').on('click', function () {
+            $('.filter-sidebar').addClass('show');
+            $('.sidebar-overlay').addClass('show');
+        });
+
+        $('.filter-sidebar-close-btn, .sidebar-overlay').on('click', function () {
+            $('.filter-sidebar').removeClass('show');
+            $('.sidebar-overlay').removeClass('show');
+        });
+
+        // Sidebar Icon & Overlay js
+
         // ===================== Sidebar Menu Js End =================
 
         //Plugin Customization Start
@@ -156,6 +170,23 @@
         // tooltips
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+        // Range slider start
+
+        $("#slider-range").slider({
+            range: true,
+            min: 60,
+            max: 100,
+            values: [60, 100],
+            slide: function (event, ui) {
+                $('input[name=min_price]').val(ui.values[0]);
+                $('input[name=max_price]').val(ui.values[1]);
+            },
+        });
+
+
+        // Range slider end
     });
 
     // ==========================================

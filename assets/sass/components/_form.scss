@@ -172,9 +172,8 @@ input[type='number'] {
 
 /* Custom Checkbox Design */
 .form--check {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  @extend .flex-wrap;
+  gap: 12px;
 
   a {
     display: inline;
@@ -216,21 +215,12 @@ input[type='number'] {
   }
 
   .form-check-label {
-    font-weight: 600;
     cursor: pointer;
-    @include fs-14;
-  }
-
-  label {
-    @include xsm-screen {
-      @include fs-15;
-    }
-  }
-
-  a {
-    @include xsm-screen {
-      @include fs-15;
-    }
+    font-size: rem(14px);
+    user-select: none;
+    font-weight: 500;
+    color: hsl(var(--black));
+    margin-top: 2px;
   }
 }
 
@@ -285,6 +275,7 @@ input[type='number'] {
 }
 
 /*  Custom Switch Design */
+
 .form--switch {
   --width: 44px;
   --height: 24px;
@@ -376,6 +367,7 @@ input[type='number'] {
 }
 
 /*  Custom Switch End Design */
+
 /* ================================= Form Css End =========================== */
 
 /* --======================Custom Input group Start ======================*/
