@@ -4718,6 +4718,10 @@ input[type=number] {
     overflow: hidden;
 }
 
+.car-item-thumb {
+    display: block;
+}
+
 .car-item-thumb img {
     width: 100%;
     height: 100%;
@@ -4742,6 +4746,7 @@ input[type=number] {
     line-height: 1.15;
     color: hsl(var(--heading-color));
     margin-bottom: 6px;
+    display: block;
 }
 
 .car-item-model {
@@ -7556,6 +7561,10 @@ input[type=number] {
 
 /* ============================= Account Css End =============================*/
 /* ================================= Dashboard Css Start =========================== */
+body:has(.dashboard) {
+    background-color: #f4f5f7;
+}
+
 .dashboard {
     position: relative;
     --inner-p: 20px;
@@ -7612,133 +7621,52 @@ input[type=number] {
     font-size: 1.5rem;
 }
 
-.widget-card1 {
-    -webkit-box-shadow: 0px 8px 20px 0px rgba(19, 21, 21, 0.05);
-    box-shadow: 0px 8px 20px 0px rgba(19, 21, 21, 0.05);
-    padding: 24px;
-    background-color: hsl(var(--white));
-    border-radius: 12px;
-    height: 100%;
-    display: block;
-}
-
-@media screen and (max-width: 1499px) {
-    .widget-card1 {
-        padding: 16px;
-        border-radius: 8px;
-    }
-}
-
-.widget-card1-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 16px;
-}
-
-.widget-card1-icon {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    height: 48px;
-    width: 48px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 8px;
-    background-color: hsl(var(--base));
-    color: hsl(var(--white));
-}
-
-.widget-card1-icon svg {
-    height: 32px;
-    width: 32px;
-}
-
-.widget-card1 .title {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1;
-    color: hsl(var(--heading-color));
-}
-
-.widget-card1 .view-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 14px;
-    gap: 8px;
-}
-
-@media screen and (max-width: 1499px) {
-    .widget-card1 .view-btn {
-        font-size: 13px;
-    }
-}
-
-.widget-card1 .view-btn .icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 13px;
-    -webkit-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-}
-
-@media screen and (max-width: 1499px) {
-    .widget-card1 .view-btn .icon {
-        font-size: 12px;
-    }
-}
-
-.widget-card1 .view-btn:hover .icon {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-}
-
 .widget-card {
     display: block;
-    position: relative;
-    background-color: hsl(var(--white));
-    border-radius: 12px;
-    padding: 24px;
+    color: hsl(var(--heading-color));
     text-decoration: none;
-    overflow: hidden;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     height: 100%;
-    width: 100%;
 }
 
 .widget-card:hover {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    border-color: transparent;
+    color: hsl(var(--heading-color));
 }
 
-.widget-card:hover .widget-card-action {
-    background-color: hsl(var(--base));
-    color: hsl(var(--white));
-    border-color: hsl(var(--base));
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+.widget-card:hover .widget-card-body {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.widget-card-body {
+    background-color: hsl(var(--white));
+    border-radius: 16px;
+    padding: 18px 20px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 26px;
+    min-height: 174px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+@media screen and (max-width: 1499px) {
+    .widget-card-body {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .widget-card-body {
+        min-height: auto;
+        border-radius: 18px;
+        gap: 22px;
+    }
 }
 
 .widget-card-header {
@@ -7748,15 +7676,27 @@ input[type=number] {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.widget-card-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
 }
 
 .widget-card-icon {
-    height: 50px;
-    width: 50px;
+    --size: 42px;
+    height: var(--size);
+    width: var(--size);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7767,67 +7707,72 @@ input[type=number] {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 10px;
-    background: hsl(var(--base));
-    color: hsl(var(--white));
-    font-size: 24px;
-    -webkit-box-shadow: 0 4px 10px -3px hsla(var(--base), 0.4);
-    box-shadow: 0 4px 10px -3px hsla(var(--base), 0.4);
+    background-color: hsl(var(--black)/0.05);
+    color: hsl(var(--black));
+    font-size: 1rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
 
-.widget-card-action {
-    height: 36px;
-    width: 36px;
+.widget-card-label {
+    font-weight: 500;
+    color: hsl(var(--black)/0.75);
+    line-height: 1.3;
+}
+
+.widget-card-content .count {
+    font-size: clamp(2.1rem, 2.4vw, 2.7rem);
+    font-weight: 700;
+    color: #101828;
+    margin-bottom: 0;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.widget-card-meta {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid #eef2f6;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid hsl(var(--base)/0.5);
-    color: hsl(var(--base));
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 12px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.widget-card-change {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 6px;
+    color: hsl(var(--success));
     font-size: 14px;
-    -webkit-transition: all linear 0.3s;
-    transition: all linear 0.3s;
+    font-weight: 600;
+    line-height: 1;
 }
 
-.widget-card-content {
-    position: relative;
-    z-index: 2;
-}
-
-.widget-card-content .count {
-    font-size: 32px;
-    font-weight: 700;
-    color: hsl(var(--heading-color));
-    margin-bottom: 4px;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-}
-
-.widget-card-content .title {
+.widget-card-change i {
     font-size: 15px;
-    font-weight: 500;
-    color: #6b7280;
-    margin-bottom: 0;
 }
 
-.widget-card-watermark {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    font-size: 140px;
-    color: hsl(var(--base));
-    opacity: 0.03;
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
-    pointer-events: none;
-    z-index: 1;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.widget-card-change.is-down {
+    color: hsl(var(--danger));
+}
+
+.widget-card-period {
+    font-size: 14px;
+    line-height: 1;
+    color: hsl(var(--black)/0.75);
 }
 
 .user-dropdown .dropdown-menu {
