@@ -1,5 +1,4 @@
-/* =========================================== Account Css Start =========================*/
-
+/* ============================= Account Css Start ============================= */
 .account-section {
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +13,6 @@
 
   @include md-screen {
     width: 550px;
-    height: auto;
   }
 }
 
@@ -43,7 +41,8 @@
   height: 100%;
   width: 50%;
   position: relative;
-  overflow: hidden;
+  --radius: 20px;
+  --circle-size: 45px;
 
   @include md-screen {
     display: none;
@@ -53,8 +52,10 @@
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: hidden;
-    border-radius: 14px;
+
+    video {
+      border-radius: var(--radius);
+    }
 
     &::after {
       content: "";
@@ -62,6 +63,92 @@
       inset: 0;
       background: var(--gr-color);
       opacity: 0.75;
+      border-radius: var(--radius);
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 24px;
+    z-index: 1;
+    background-color: hsl(var(--white));
+    border-radius: calc(var(--radius) * 0.85);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -45px;
+      top: 0px;
+      width: var(--circle-size);
+      height: var(--circle-size);
+      background: transparent;
+      border-top-left-radius: var(--radius);
+      box-shadow: -20px -20px 0 0 hsl(var(--white));
+      transform: rotate(0deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -45px;
+      width: var(--circle-size);
+      height: var(--circle-size);
+      background: transparent;
+      border-top-left-radius: var(--radius);
+      box-shadow: -20px -20px 0 0 hsl(var(--white));
+      transform: rotate(0deg);
+    }
+
+    img {
+      max-width: 184px;
+      width: 100%;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    padding: 40px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      color: hsl(var(--white));
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    &-list {
+      .item {
+        font-size: rem(20px);
+        color: hsl(var(--white));
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .icon {
+          --size: 28px;
+          width: var(--size);
+          height: var(--size);
+          background-color: hsl(var(--white));
+          color: hsl(var(--base));
+          border-radius: 6px;
+          font-size: rem(17px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
     }
   }
 }
@@ -109,13 +196,27 @@
   }
 
   &-header {
-    margin-bottom: 32px;
-    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-title {
+    margin-bottom: 6px;
+  }
+
+  &-desc {
+    color: hsl(var(--black) / .75);
+    font-size: rem(17px);
+    line-height: 1.5;
   }
 
   &-logo {
     max-width: 184px;
     margin-bottom: 16px;
+    display: none;
+
+    @include md-screen {
+      display: block;
+    }
   }
 
   .form--control {
@@ -213,4 +314,4 @@
   }
 }
 
-/* ============================================ Account Css End ====================================*/
+/* ============================= Account Css End =============================*/

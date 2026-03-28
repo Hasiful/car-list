@@ -136,6 +136,75 @@
                 variableWidth: true,
             });
 
+            // =======Gallery magnific Popup Icon Js Start ===
+
+            // Hide items beyond the first 5 in the view
+            $('.details-view-item').each(function (index) {
+                if (index >= 5) {
+                    $(this).hide();
+                }
+            });
+
+            $('.details-view-item').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+            // ======= Gallery magnific Popup Icon Js End ===
+
+            // custom scrollspy
+
+            function scrollSpy(selector, options) {
+                const scrollSpyContainer = $(selector).eq(0);
+                const scrollSpyItems = [...scrollSpyContainer.find('[data-spy="scroll"]')];
+                const scrollSpySections = [];
+                const scrollSpyOptions = {
+                    offset: 0,
+                    position: 0,
+                    transition: 150,
+                    ...options
+                }
+
+                if (scrollSpyContainer.length) {
+                    scrollSpyItems.forEach(function (item) {
+                        scrollSpySections.push($(item.hash)[0]);
+
+                        $(item).on('click', function (e) {
+                            e.preventDefault();
+                            $('html,body').animate({
+                                scrollTop: $(this.hash).offset().top - scrollSpyOptions.offset
+                            }, scrollSpyOptions.transition)
+                        });
+                    });
+
+                    $(window).on('scroll', function () {
+                        const scrollPos = $(document).scrollTop() + scrollSpyOptions.position;
+
+                        scrollSpySections.forEach(function (section) {
+                            const top = $(section).offset().top;
+                            const bottom = top + $(section).outerHeight();
+                            const id = $(section).attr('id');
+
+                            if (scrollPos >= top && scrollPos < bottom) {
+                                scrollSpyContainer.find('.active').removeClass('active');
+                                $(`a[href="#${id}"]`).addClass('active');
+                            } else {
+                                $(`a[href="#${id}"]`).removeClass('active');
+                            }
+                        })
+                    });
+                }
+            }
+
+            const headerHeight = document.querySelector(".header")?.offsetHeight || 0;
+            const scrollSpyHeight = document.querySelector("#scrollSpy")?.offsetHeight || 0;
+
+            scrollSpy('#scrollSpy', {
+                offset: (headerHeight + scrollSpyHeight + 24),
+                position: (headerHeight + scrollSpyHeight + 48),
+            });
+
         })();
         // ========================= Slick Slider Js End ===================
 
